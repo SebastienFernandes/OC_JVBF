@@ -1,0 +1,75 @@
+body {
+    background-color: lightgray;
+}
+
+#Game {
+    background-color: white;
+	border: 3px solid black;
+	margin: 50px;
+	height: 400px;
+	width: 80%;
+	display: flex;
+	flex-flow: wrap;
+}
+
+#BlockGame{	
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+}
+
+#Ressources{
+	border: 1px solid black;
+	width: 100%;
+	height: 30px;
+	display: flex;
+	justify-content: space-between;
+}
+
+#Eco{
+	border: 1px solid black;
+	width: 100%;
+	height: 30px;
+	display: flex;
+	justify-content: flex-end;
+}
+
+#Form{
+	border: 1px solid black;
+	display: inline-block;
+	order: 1;
+}
+
+#Event{
+	border: 1px solid black;
+	display: inline-block;
+	order: 1;
+}
+
+#energie, #morale, #argent, #economie {
+	display: inline-block;
+	border: 1px solid black;
+	padding: 5px;
+	width: 130px;
+	text-align: center;
+}
+
+/*----couleur----*/
+
+#energie {
+	background-color: #FFA500;
+}
+
+#morale {
+	background-color: #6495ED;
+}
+
+#argent {
+	background-color: #228B22;
+}
+
+#economie {
+	background-color: #32CD32;
+}

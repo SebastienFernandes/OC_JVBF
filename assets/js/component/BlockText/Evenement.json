@@ -1,0 +1,39 @@
+{
+  "evenement": [
+    {
+      "text": "evenement 0 energie + 100",
+      "ressource": "energie",
+      "valeur": 100
+    },
+    {
+      "text": "evenement 1 argent - 100",
+      "ressource": "argent",
+      "valeur": -100
+    },
+    {
+      "text": "evenement 2 energie - 100",
+      "ressource": "energie",
+      "valeur": -100
+    },
+    {
+      "text": "evenement 3 morale + 100",
+      "ressource": "morale",
+      "valeur": 100
+    },
+    {
+      "text": "evenement 4 argent - 100",
+      "ressource": "argent",
+      "valeur": -100
+    },
+    {
+      "text": "evenement 5 energie - 100",
+      "ressource": "energie",
+      "valeur": -100
+    },
+    {
+      "text": "evenement 6 morale + 100",
+      "ressource": "morale",
+      "valeur": 100
+    }
+  ]
+}
