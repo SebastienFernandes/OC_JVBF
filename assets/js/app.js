@@ -20,7 +20,6 @@ class Home extends React.Component {
     this.changeEvenement  = this.changeEvenement.bind(this);
     this.changeTableau    = this.changeTableau.bind(this);
     this.changeCountWeek  = this.changeCountWeek.bind(this);
-    /*this.formChange       = this.formChange.bind(this);*/
     this.formSubmit       = this.formSubmit.bind(this);
     this.state = {
       ressources: {
@@ -72,11 +71,6 @@ class Home extends React.Component {
     }
   }
 
-  /*formChange(event) {
-    const val = Number(event.target.value);
-    this.setState({value: val});
-  }*/
-
   formSubmit(event) {
     var tailleTableau = this.state.tableauText.length;
     var nb            = Math.floor(Math.random() * tailleTableau);
@@ -91,6 +85,12 @@ class Home extends React.Component {
     event.preventDefault();
 
     this.changeCountWeek();
+
+    if (this.state.countWeek % 4 === 0) {
+      return (
+        <input type="button" value="Impots" onClick={this.formImpots}/>
+        );
+    }
   }
 
   formImpots() {
@@ -117,12 +117,14 @@ class Home extends React.Component {
                 curentText ={this.state.curentText}/>
             </div>
             <input type="submit" value="Submit" />
-            <input if={this.state.countWeek === 4} type="button" value="Impots" onClick={this.formImpots}/>
+            <input type="button" value="Impots" onClick={this.formImpots}/>
             <BlockGame2
               state     ={this.state.ressources}
-              countWeek ={this.state.countWeek}/>
+              countWeek ={this.state.countWeek}
+              tableauText ={this.state.tableauText}/>
           </div>
-          <BlockAdmin changeRessources ={this.changeRessources}/>
+          <BlockAdmin
+            changeRessources ={this.changeRessources}/>
         </form>
       </div>
     );
